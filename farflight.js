@@ -213,7 +213,7 @@ this.actTimer.advance();
     if ( (this.levelCounter + 1) * 50000 < this.values.currentDistance ) { //500 m
 	  this.levelCounter++;
 	  this.addShapes(4, true); //MARK: Addition //TODO:FIX
-      console.log('numshapes=' + this.numShapes + 'shapes.length=' + this.shapes.length);
+      //console.log('numshapes=' + this.numShapes + 'shapes.length=' + this.shapes.length);
       //this.setLevelScreenTheme(Math.floor((Math.random()*this.levelThemes.length)));
 	}
     this.values.currentDistance += currentSpeed;
@@ -446,7 +446,7 @@ FF_Game.prototype.setGameTitle = function() {
 }
 
 FF_Game.prototype.setSize = function(width, height) {
- console.log(width + ' ' + height);
+ //console.log(width + ' ' + height);
   this.canvas.setSize(width, height);
 }
 

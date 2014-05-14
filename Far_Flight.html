@@ -25,37 +25,6 @@
 //1366 1024
 //document.body.clientWidth
 
-/*
-
- $(document).ready(function () {
-        setupPointerLock();
-    })
-
-
-function setupPointerLock() {
-
-        $("#canvas").click(function () {
-            var canvas = $("#canvas").get()[0];
-            canvas.requestPointerLock = canvas.requestPointerLock ||
-                    canvas.mozRequestPointerLock ||
-                    canvas.webkitRequestPointerLock;
-
-
-            // Ask the browser to lock the pointer)
-            canvas.requestPointerLock();
-                    if (document.pointerLockElement === canvas ||
-                document.mozPointerLockElement === canvas ||
-                document.webkitPointerLockElement === canvas){
- lock = true;
-}
-        });
-
-}
-
-var lock = false;
-
-
-*/
 
 var game = new FF_Game('canvas', 700, 525);
 
