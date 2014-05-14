@@ -1,0 +1,40 @@
+body {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  background: #333;
+  color: #090;
+}
+
+a {
+  color: #990;
+}
+
+.navbar-nav>.active>a {
+  color: #990 !important;
+  background: #555 !important;
+}
+
+.navbar-nav>li>a {
+  color: #090 !important;
+}
+
+.navbar-default, .navbar-brand, .navbar-text {
+  color: #090 !important;
+}
+
+
+.navbar-default {
+  background: #333;
+}
+
+#header {
+  border: 0;
+}
+
+#viewport {
+  padding-top:0em;
+  display: block;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Far Flight</title>
+  
+  <link rel="stylesheet" href="style.css" media="all">
+  <link rel="stylesheet" href="style2.css" media="all">
+</head><body>
+  <div role="main">
+ <script src="jquery-2.1.1.min.js"></script>
+    <script src="ff_achievement.js"></script>
+
+<script src="words.js"></script>
+<script src="shape.js"></script>
+<script src="canvas.js"></script>
+<script src="farflight.js"></script>
+<script src="ff_splashmessage.js"></script>
+<div id="viewport">
+  <canvas id="canvas" class="center"></canvas>
+</div>
+<script> 
+//700 525
+//1024 768
+//1366 1024
+//document.body.clientWidth
+
+/*
+
+ $(document).ready(function () {
+        setupPointerLock();
+    })
+
+
+function setupPointerLock() {
+
+        $("#canvas").click(function () {
+            var canvas = $("#canvas").get()[0];
+            canvas.requestPointerLock = canvas.requestPointerLock ||
+                    canvas.mozRequestPointerLock ||
+                    canvas.webkitRequestPointerLock;
+
+
+            // Ask the browser to lock the pointer)
+            canvas.requestPointerLock();
+                    if (document.pointerLockElement === canvas ||
+                document.mozPointerLockElement === canvas ||
+                document.webkitPointerLockElement === canvas){
+ lock = true;
+}
+        });
+
+}
+
+var lock = false;
+
+
+*/
+
+var game = new FF_Game('canvas', 700, 525);
+
+function resizeViewport() {
+
+  console.log('resizing');	
+  var width = window.innerWidth;
+  var height = window.innerHeight - 16;// - $("#header").outerHeight() - $("#footer").outerHeight();
+  $("#viewport").height(height + "px");
+  game.setSize(width, height);
+}
+
+$(function() {
+  $(window).resize(resizeViewport);
+  resizeViewport();
+});
+</script>
+</div>
+
+</body></html>
